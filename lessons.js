@@ -29,6 +29,7 @@ window.LESSONS = { python: {
 "m1-l2": {
   objetivo:"Escrever e executar seu primeiro programa usando print().",
   prereq:"Python instalado (python.org) e um editor, como o VS Code.",
+  video:{id:"BXzKS1heLNU"},
   corpo:[
     "<p>Para conferir a instalação, abra o terminal e digite <code>python --version</code>. No Linux e no macOS, pode ser <code>python3 --version</code>.</p>",
     {code:`print("Olá, mundo!")`,nota:"Salve como <code>ola.py</code> e rode no terminal com <code>python ola.py</code>."},
