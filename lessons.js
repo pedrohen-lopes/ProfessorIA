@@ -1,4 +1,5 @@
-/* Conteúdo das aulas: LESSONS[curso][idDaAula]. Tipos de exercício:
+/* Vídeo opcional por aula: video:{id:"IDdoVideo"} ou video:{list:"IDdaPlaylist"}.
+   Conteúdo das aulas: LESSONS[curso][idDaAula]. Tipos de exercício:
    {q,o:[opções],r:índiceCorreto,d:dica,e:explicação}  -> múltipla escolha / verdadeiro-falso
    {q,r:"texto",d:dica,e:explicação}                   -> completar (resposta digitada) */
 window.LESSONS = { python: {
@@ -6,6 +7,7 @@ window.LESSONS = { python: {
 "m1-l1": {
   objetivo:"Entender o que é Python, para que serve e onde é usado.",
   prereq:"Nenhum. Só curiosidade.",
+  video:{id:"NRFZFXT1JvM"},
   corpo:[
     "<p><b>Python</b> é uma linguagem de programação: uma forma de escrever instruções que o computador consegue executar. Pense em uma receita de bolo. Você escreve os passos em ordem e quem executa (o computador) segue tudo à risca.</p>",
     "<p>Criada por Guido van Rossum e lançada em 1991, foi desenhada para ser legível. Um código em Python se parece com texto simples em inglês.</p>",
