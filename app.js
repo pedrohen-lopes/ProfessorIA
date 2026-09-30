@@ -38,7 +38,7 @@ const home = () => {
 const modulos = () => `<h1>Módulos</h1>` + Object.keys(C).map(c => `<h2>${C[c].icon} ${C[c].title}</h2>${mods(c)}`).join("");
 
 const vid = v => { const src = v.list ? "videoseries?list=" + v.list : v.id, url = v.list ? "https://www.youtube.com/playlist?list=" + v.list : "https://www.youtube.com/watch?v=" + v.id;
-  return `<h2>Vídeo de apoio</h2><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${src}" title="Vídeo de apoio" loading="lazy" allowfullscreen></iframe></div><p class="note">${v.nota ? v.nota + " " : ""}Se o vídeo não carregar, <a href="${url}" target="_blank" rel="noopener">abra no YouTube</a>.</p>`; };
+  return `<h2>Vídeo de apoio</h2><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${src}" title="Vídeo de apoio" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><p class="note">${v.nota ? v.nota + " " : ""}Se o vídeo não carregar, <a href="${url}" target="_blank" rel="noopener">abra no YouTube</a>.</p>`; };
 const list = (t, a) => a && a.length ? `<h2>${t}</h2><ul>${a.map(x => `<li>${x}</li>`).join("")}</ul>` : "";
 
 const aula = (c, id) => {
