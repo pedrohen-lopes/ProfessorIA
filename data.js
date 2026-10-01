@@ -46,4 +46,3 @@ window.COURSES = {
     ]
   }
 };
-
