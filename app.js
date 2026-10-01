@@ -105,7 +105,7 @@ document.addEventListener("click", e => {
 document.getElementById("q").addEventListener("keydown", e => {
   if (e.key === "Enter" && e.target.value.trim()) location.hash = "#/busca/" + encodeURIComponent(e.target.value.trim());
 });
-const routes = [[/^#\/modulos$/, modulos], [/^#\/aula\/(\w+)\/([\w-]+)$/, aula], [/^#\/glossario$/, gloss], [/^#\/lab$/, lab], [/^#\/busca\/(.*)$/, busca]];
+const routes = [[/^#\/modulos$/, modulos], [/^#\/aula\/([\w-]+)\/([\w-]+)$/, aula], [/^#\/glossario$/, gloss], [/^#\/lab$/, lab], [/^#\/busca\/(.*)$/, busca]];
 function route() {
   const h = location.hash || "#/"; let v = home, a = [];
   for (const [r, f] of routes) { const m = h.match(r); if (m) { v = f; a = m.slice(1); break; } }
