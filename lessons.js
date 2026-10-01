@@ -206,4 +206,4 @@ window.LESSONS = { python: {
     {q:`Em <code>letras = ["a", "b", "c"]</code>, o que é <code>letras[1]</code>?`,o:["a","b","c"],r:1,d:"O primeiro índice é 0.",e:"Índice 0 é a, índice 1 é b."},
     {q:"Quanto vale <code>len([10, 20, 30])</code>? (digite o número)",r:"3",d:"len conta os itens.",e:"A lista tem 3 itens."}
   ],
-  desafio:"Crie uma lista com 5 notas e mostre a média usan
+  desafio:"Crie uma lista com 5 notas e mostre a média usando 
